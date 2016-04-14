@@ -1,0 +1,8 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Elly
+[user]
+	email = elly.o@hotmail.co.uk
