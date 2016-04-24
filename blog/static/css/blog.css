@@ -10,6 +10,8 @@ h2 a {
     padding: 20px 20px 20px 50px;
     position: fixed;
     width: 100%;
+	border-bottom: 10px solid #555;
+	border-left: 10px solid #555;
 
 
 }
@@ -29,10 +31,11 @@ ul {
 	padding: 0;
 	width: 300px;
 	background-color: #BEFF7F;
-
-    font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	position: fixed;
 	overflow: auto;
+	border-right: 10px solid #555;
+	border-top: 10px solid #555;
 
 }
 
