@@ -4,9 +4,12 @@ h2 a {
 
 
 .page-header {
+    margin-left: 300px;
     background-color: #F5FC12;
     margin-top: 0;
     padding: 20px 20px 20px 50px;
+    position: fixed;
+    width: 100%;
 
 
 }
@@ -20,8 +23,9 @@ h2 a {
 
 ul {
 	list-style-type: none;
-	margin-top: -40px;
+	margin-top: 165px;
 	margin-left: -45px;
+	height: 100%;
 	padding: 0;
 	width: 300px;
 	background-color: #BEFF7F;
@@ -55,6 +59,7 @@ li a:hover {
 
     margin-left: 60px;
 
+
 }
 
 h1, h2, h3, h4 {
@@ -87,8 +92,9 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: -150px;
         margin-left: 300px;
+    margin-top: 200px;
 }
 
 .post h1 a, .post h1 a:visited {
