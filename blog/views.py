@@ -43,3 +43,23 @@ def lazy_list(request):
     posts = Post.objects.all().filter(mood__icontains='lazy').order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def tired_list(request):
+    posts = Post.objects.all().filter(mood__icontains='tired').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+def party_list(request):
+    posts = Post.objects.all().filter(mood__icontains='party').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+def fancy_list(request):
+    posts = Post.objects.all().filter(mood__icontains='fancy').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+def pitcher_list(request):
+    posts = Post.objects.all().filter(mood__icontains='pitcher').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+def flirty_list(request):
+    posts = Post.objects.all().filter(mood__icontains='flirty').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+

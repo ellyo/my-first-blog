@@ -11,5 +11,10 @@ urlpatterns = [
     url(r'^excited/$', views.excited_list, name='excited_list'),
     url(r'^hungry/$', views.hungry_list, name='hungry_list'),
     url(r'^lazy/$', views.lazy_list, name='lazy_list'),
+    url(r'^tired/$', views.tired_list, name='tired_list'),
+    url(r'^party/$', views.party_list, name='party_list'),
+    url(r'^fancy/$', views.fancy_list, name='fancy_list'),
+    url(r'^pitcher/$', views.pitcher_list, name='pitcher_list'),
+    url(r'^flirty/$', views.flirty_list, name='flirty_list'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]
