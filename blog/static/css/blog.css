@@ -54,7 +54,7 @@ li a:hover {
 }
 
 .active {
-	background-color: #4CAF50;
+	background-color: #555;
 	color: white;
 }
 
@@ -146,5 +146,6 @@ h5 {
    width:100%;
    background:#FFFFFF;
 }
+
 
 /* Start http://www.cursors-4u.com */ body, a:hover {cursor: url(http://cur.cursors-4u.net/food/foo-5/foo483.cur), progress !important;} /* End http://www.cursors-4u.com */
