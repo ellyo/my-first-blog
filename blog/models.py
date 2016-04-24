@@ -7,6 +7,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     mood = models.CharField(max_length=20)
+    units = models.CharField(max_length=1)
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
