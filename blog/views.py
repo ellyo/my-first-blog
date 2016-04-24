@@ -67,3 +67,6 @@ def surprise_me(request):
     posts = Post.objects.all().order_by('?')[:1]
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def shop(request):
+    posts = Post.objects.all().order_by('?')[:0]
+    return render(request, 'blog/post_list.html', {'posts': posts})
