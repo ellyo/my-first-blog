@@ -15,7 +15,7 @@
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #000000;
     text-decoration: none;
-    text-align: center
+    text-align: left
     
 }
 
@@ -105,7 +105,7 @@ h4 a {
     color: #FFFFFF;
     float: right;
     font-size: 30pt;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .post {
@@ -123,6 +123,13 @@ h4 a {
     color: #F5FC12;
 }
 
-
+.footer {
+   position:fixed;
+   left:1250px;
+   bottom:20px;
+   height:30px;
+   width:100%;
+   background:#FFFFFF;
+}
 
 /* Start http://www.cursors-4u.com */ body, a:hover {cursor: url(http://cur.cursors-4u.net/food/foo-5/foo483.cur), progress !important;} /* End http://www.cursors-4u.com */

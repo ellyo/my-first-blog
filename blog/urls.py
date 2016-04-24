@@ -16,5 +16,6 @@ urlpatterns = [
     url(r'^fancy/$', views.fancy_list, name='fancy_list'),
     url(r'^pitcher/$', views.pitcher_list, name='pitcher_list'),
     url(r'^flirty/$', views.flirty_list, name='flirty_list'),
+    url(r'^surprise/$', views.surprise_me, name='surprise_me'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]

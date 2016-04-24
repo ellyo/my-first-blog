@@ -63,3 +63,7 @@ def flirty_list(request):
     posts = Post.objects.all().filter(mood__icontains='flirty').order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def surprise_me(request):
+    posts = Post.objects.all().order_by('?')[:1]
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
