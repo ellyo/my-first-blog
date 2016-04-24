@@ -9,6 +9,7 @@
         {% endif %}
         <h1>{{ post.title }}</h1>
 	<h3>{{ post.mood }}</h3>
+	<p> This drink contains {{ post.units }} unit(s) </p>
         <p>{{ post.text|linebreaks }}</p>
     </div>
 {% endblock %}
