@@ -27,6 +27,8 @@ ul {
 	background-color: #BEFF7F;
 
     font-family: 'Raleway', sans-serif;
+	position: fixed;
+	overflow: auto;
 
 }
 
@@ -59,6 +61,7 @@ h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
     color: #000000;
 
+
     
 }
 
@@ -85,6 +88,7 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
+        margin-left: 300px;
 }
 
 .post h1 a, .post h1 a:visited {
