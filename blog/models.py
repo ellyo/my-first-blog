@@ -8,6 +8,7 @@ class Post(models.Model):
     text = models.TextField()
     mood = models.CharField(max_length=20)
     units = models.CharField(max_length=1)
+    photo = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
