@@ -1,9 +1,11 @@
 from django.conf.urls import include, url
+from django.views.generic import TemplateView
 from . import views
 
 urlpatterns = [
     url(r'^cocktailslist/$', views.post_list, name='post_list'),
     url(r'^$', views.mood_list, name='homepage'),
+    #url(r'^$', TemplateView.as_view(template_name='mood_list.html'))
     url(r'^happy/$', views.happy_list, name='happy_list'),
     url(r'^angry/$', views.angry_list, name='angry_list'),
     url(r'^sad/$', views.sad_list, name='sad_list'),
@@ -19,4 +21,5 @@ urlpatterns = [
     url(r'^surprise/$', views.surprise_me, name='surprise_me'),
     url(r'^shop/$', views.shop, name='shop'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    url(r'^search/', include('haystack.urls')),
 ]

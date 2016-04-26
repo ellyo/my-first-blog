@@ -12,7 +12,7 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 
 def mood_list(request):
-    moods = ['Happy', 'Angry', 'Sad']
+    moods = []
     return render(request, 'blog/mood_list.html', {'moods': moods})
 
 def happy_list(request):
@@ -70,3 +70,10 @@ def surprise_me(request):
 def shop(request):
     posts = Post.objects.all().order_by('?')[:0]
     return render(request, 'blog/post_list.html', {'posts': posts})
+
+
+def shop(request):
+    shop = []
+    return render(request, 'blog/shop.html', {'shop': shop})
+
+

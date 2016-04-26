@@ -115,6 +115,9 @@ left: 1em;
 
 }
 
+a:hover {
+ cursor:pointer;
+} 
 
 h1 a {
     font-family: 'Raleway', sans-serif;
