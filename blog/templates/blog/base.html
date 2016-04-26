@@ -9,20 +9,23 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,400italic' rel='stylesheet' type='text/css'>
-	<meta name="google-site-verification" content="IA7926QJ7mhe6txKZDNleZ7BVD1FIuLI8jZ95VuJce4" />
 
     </head>
 
 	<body>
 
     		<div class="page-header">
+
        			 <a href="/"><img src="http://40.media.tumblr.com/2517db8454234eab994f0ca5eccf0633/tumblr_o5vw6e1Q2c1qbgb0co1_500.png" alt="Moodary" style="width:400px;height:80px;"></a>
 			 <h1><a href="/cocktailslist">All Cocktails</a> &nbsp; 
 			 <a href="/shop" >Shop</a> &nbsp;
 			 <a href="/search" >Search</a> &nbsp;
-			 <a href="https://www.drinkaware.co.uk/" target="_blank">Drink Aware</a></h1>		    	
+			 <a href="https://www.drinkaware.co.uk/" target="_blank">Drink Aware</a></h1>	
+	    	
 		</div>
+
    		<div class="content container">
+
         		<div class="row">
             			
 				<div class="row">
@@ -43,6 +46,7 @@
 						<br><br>
 					</ul>
 				</div>
+
 					{% block content %}
 					{% endblock content %}
             			
@@ -51,20 +55,25 @@
 
 
 	</body>
-     <div class="footer">
+
+        <div class="footer">
+
 		 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 		 <a href="https://www.instagram.com/moodary/" target="_blank"><img src="http://cdn6.bigcommerce.com/s-wug401/templates/__custom/images/longboard/icon-instagram.svg?t=1443146817" alt="Instagram" style="width:50px;height:50px;"><a/>
 	         <a href="https://www.facebook.com/moodary/" target="_blank"><img src="http://takedesigns.com/wp-content/uploads/2013/02/fb-10.png" alt="Facebook" style="width:50px;height:50px;"><a/>	
 	         <a href="https://www.twitter.com/moodarydrinks/" target="_blank"><img src="http://bloximages.newyork1.vip.townnews.com/dailyprogress.com/content/tncms/live/global/resources/images/_site/social/twitter-logo-cutout.png?_dc=1410894165" alt="Twitter" style="width:50px;height:50px;"><a/>	
 		 <br>
-		<audio controls>
-		 <source src="http://ourmusicproject.org/mp3s/sotm/1-05%20Sir%20Duke.mp3"
-         				type='audio/mp4'>
-		 <!-- The next two lines are only executed if the browser doesn't support MP4 files -->
-		 <source src="http://ourmusicproject.org/mp3s/sotm/1-05%20Sir%20Duke.mp3"
-         				type='audio/ogg; codecs=vorbis'>
-		 <!-- The next line will only be executed if the browser doesn't support the <audio> tag-->
-		 <p>Your user agent does not support the HTML5 Audio element.</p>
+
+	      	 <audio controls>
+
+			 <source src="http://ourmusicproject.org/mp3s/sotm/1-05%20Sir%20Duke.mp3" type='audio/mp4'>
+			 <!-- The next two lines are only executed if the browser doesn't support MP4 files -->
+			 <source src="http://ourmusicproject.org/mp3s/sotm/1-05%20Sir%20Duke.mp3" type='audio/ogg; codecs=vorbis'>
+			 <!-- The next line will only be executed if the browser doesn't support the <audio> tag-->
+			 <p>Your user agent does not support the HTML5 Audio element.</p>
+
 		</audio>
-     </div>				
+
+        </div>		
+		
 </html>

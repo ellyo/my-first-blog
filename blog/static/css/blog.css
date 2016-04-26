@@ -65,11 +65,19 @@ li a:hover {
 	color: white;
 }
 
+.active {
+	background-color: #555;
+	color: white;
+}
+
+
 a.hoverbubble {
   position: relative;
   text-decoration: none;
 }
+
 a.hoverbubble span {display: none;}
+
 a.hoverbubble:hover span {
 display: block;
 position: absolute;
@@ -81,7 +89,7 @@ width: auto;
 height: auto;
 white-space: nowrap;
 top: -40px;
-background: rgba(0,0,0,.8);
+background: #000008;
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
@@ -89,11 +97,12 @@ color: #fff;
 font-size: 0.86em;
 font-family: 'Raleway', sans-serif;
 }
+
 a.hoverbubble:hover span:after {
 position: absolute;
 display: block;
 content: "";
-border-color: rgba(0,0,0,.8) transparent transparent transparent;
+border-color: #000008 transparent transparent transparent;
 border-style: solid;
 border-width: 10px;
 height: 0;
@@ -103,21 +112,17 @@ bottom: -20px;
 left: 1em;
 }
 
-.active {
-	background-color: #555;
-	color: white;
-}
 
 .content {
 
     margin-left: 60px;
-
-
 }
+
 
 a:hover {
  cursor:pointer;
 } 
+
 
 h1 a {
     font-family: 'Raleway', sans-serif;
@@ -149,17 +154,7 @@ h5 {
     font-size: 30pt;
     text-align: center;
 }
-.date {
-    color: #828282;
-}
 
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
 
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #FFFFFF;
@@ -191,6 +186,7 @@ h5 {
 .post h5 a, .post h5 a:hover {
     color: #F5FC12;
 }
+
 .footer {
    position:fixed;
    float: right;

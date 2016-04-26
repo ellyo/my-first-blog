@@ -1,6 +1,10 @@
 from django.db import models
 from django.utils import timezone
 
+"""
+A class uses django models to create the input fields offered when creating a post
+
+"""
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
@@ -14,7 +18,7 @@ class Post(models.Model):
     published_date = models.DateTimeField(
             blank=True, null=True)
 
-    def publish(self):
+    def publish(self):  #Publishes the post when the published date has passed
         self.published_date = timezone.now()
         self.save()
 
