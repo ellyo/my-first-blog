@@ -1,6 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+{% load googlesearch_inclusion_tags %}
     {% for post in posts %}
         <div class="post">
             
@@ -9,4 +10,5 @@
 	    <h3>Mood: {{ post.mood }}</h3>
         </div>
     {% endfor %}
+{% googlesearch_results %}
 {% endblock content %}

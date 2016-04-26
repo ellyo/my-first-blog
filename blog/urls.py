@@ -5,7 +5,6 @@ from . import views
 urlpatterns = [
     url(r'^cocktailslist/$', views.post_list, name='post_list'),
     url(r'^$', views.mood_list, name='homepage'),
-    #url(r'^$', TemplateView.as_view(template_name='mood_list.html'))
     url(r'^happy/$', views.happy_list, name='happy_list'),
     url(r'^angry/$', views.angry_list, name='angry_list'),
     url(r'^sad/$', views.sad_list, name='sad_list'),
