@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^flirty/$', views.flirty_list, name='flirty_list'),
     url(r'^surprise/$', views.surprise_me, name='surprise_me'),
     url(r'^shop/$', views.shop, name='shop'),
+    url(r'^search/$', views.search, name='search'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^search/', include('haystack.urls')),
+
 ]
