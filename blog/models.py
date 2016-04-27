@@ -11,7 +11,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     mood = models.CharField(max_length=20)
-    units = models.CharField(max_length=1)
+    units = models.CharField(max_length=2)
     photo = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
