@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^shop/$', views.shop, name='shop'),
     url(r'^search/$', views.search, name='search'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    url(r'^nonalcoholic/$', views.non_alcoholic, name='non_alcoholic'),
 
 ]

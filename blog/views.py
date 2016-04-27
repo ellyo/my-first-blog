@@ -29,6 +29,10 @@ def surprise_me(request):  #Creates a randomly ordered list of all the posts and
     posts = Post.objects.all().filter(published_date__lte=timezone.now()).order_by('?')[:1] 
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def non_alcoholic(request):
+    posts = Post.objects.all().filter(published_date__lte=timezone.now()).filter(units__iexact='0').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
 """
 Listing posts by mood:
 If the mood field for a post contains the specified mood, the post is included in the list
